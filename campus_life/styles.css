@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Signika&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* navbar section */
+.navbar {
+    width: 100%;
+    background-color: rgba(41, 52, 98, 1);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    border-radius: .2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.logo a img {
+    height: 2.3rem;
+    /* padding: 0.1rem; */
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.nav-item li a {
+    color: #fff;
+}
+
+.nav-item li a:hover,
+.nav-item li a:active {
+    color: #FFF80A;
+    border-bottom: #FFF80A;
+    border-bottom: 2px solid #FFF80A;
+    padding-bottom: 0.2rem;
+}
+
+/* home page = first section */
+.container {
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.home img {
+    width: 100%;
+    height: 100vh;
+    /* opacity: 0.5; */
+    filter: brightness(.5);
+}
+
+.campus{
+    padding: 1rem;
+    text-align: center;
+}
+
+.campus h2{
+    color: #D61C4E;
+    margin: 1rem 0;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.campus p{
+    color: rgba(0,0,0, .8);
+    text-align: justify;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin-left: 3rem;
+}
+
+.culture{
+    padding: 5rem 1rem;
+}
+
+.culture .leftside{
+    float:left;
+    width: 50%;
+    display: inline;
+}
+
+.culture h2{
+    font-size: 1.5rem;
+    color: #D61C4E;
+    margin-bottom: 1rem;
+}
+
+.culture img{
+    width: 50%;
+    float: right;
+    border-radius: .3rem;
+}
+
+#end{
+    width: 90%;
+    margin: 7rem 3rem
+}
+
+.library{
+    padding: 5rem 2rem;
+} 
+
+.library h2{
+    color: #D61C4E;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.library p{
+    color: rgba(0,0,0, .8);
+    margin: 1rem ;
+}
+
+
+/* amenties */
+
+.amenties{
+    border: 2px solid black;
+    background-color: #293462;
+    padding: 2rem 5rem;
+    margin-bottom: 5rem;
+}
+
+.amenties h3{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-left: 2rem;
+}
+
+.amenties li{
+    color: rgba(255,255,255, .8);
+    line-height: 2rem;
+}
+
+
+/* gallery */
+
+.gallery-heading{
+    margin-top: 10rem;
+}
+
+.gallery-heading h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #D61C4E;
+    text-decoration: underline;
+    text-decoration-color: #293462;
+}
+
+.gallery{
+    min-height: 250vh;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+
+}
+
+.gallery .images{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    min-height:250vh;
+    gap: 1rem;
+}
+
+.gallery .images img{
+    width: 100%;
+    border-radius: .3rem;
+    box-shadow: 1px 1px 10px #293462;
+}
+
+/* a line before footer */
+.footer-top {
+    width: 100%;
+    height: .5rem;
+    background-color: #FFF80A;
+    box-shadow: 1px 1px 5px #293462;
+}
+
+/* footer section */
+.footer {
+    width: 100%;
+    height: 93vh;
+    background-color: black;
+    display: flex;
+}
+
+.footer .social-section img {
+    width: 15rem;
+    display: block;
+    padding-left: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.footer .social-section a {
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 5rem;
+    margin-left: 6rem;
+}
+
+.footer .social-section a:hover {
+    color: #FFF80A;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.footer .section1 {
+    width: 13rem;
+    height: 20rem;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.footer .section1 h2 {
+    font-size: .8rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.footer .section1 a {
+    color: #fff;
+    line-height: 2rem;
+    font-size: .7rem;
+    display: block;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.footer .section1 a:hover {
+    color: #FFF80A;
+    text-decoration: underline;
+}
+
+.footer .section2 {
+    width: 13rem;
+    height: 20rem;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+.footer .section2 h2 {
+    font-size: .8rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.footer .section2 a {
+    color: #fff;
+    line-height: 2rem;
+    font-size: .7rem;
+    display: block;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.footer .section2 a:hover {
+    color: #FFF80A;
+    text-decoration: underline;
+}
+
+/* email section */
+.footer .section3 {
+    width: 18rem;
+    height: 20rem;
+    margin-top: 6rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.footer .section3 h2 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.footer .section3 input {
+    display: block;
+    background-color: black;
+    color: #fff;
+    border-bottom: 2px groove rgba(255, 255, 255, .5);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    margin-left: 1rem;
+    width: 16rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-transform: none;
+}
+
+.footer .section3 input:focus {
+    padding-bottom: .5rem;
+}
+
+.footer .section3 button {
+    margin: 0 1.5rem;
+    background-color: #D61C4E;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: .2rem;
+}
+
+.footer .section3 button:hover {
+    cursor: pointer;
+    padding: .6rem 1.7rem;
+    box-shadow: .1px .1px 1px #fff;
+}
+
+/* last hr line */
+.copyrightline {
+    background-color: #fff;
+}
+
+/* copyright section */
+.copyright {
+    background-color: black;
+    padding: .5rem 0;
+}
+
+.copyright .copy-right {
+    color: #fff;
+    margin: 1rem 8rem;
+    font-size: .7rem;
+    opacity: .7;
+}
+
+.copyright .terms {
+    color: #fff;
+    margin-left: 10rem;
+    font-size: .7rem;
+    opacity: .7;
+}
+

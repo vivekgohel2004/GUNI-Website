@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Signika&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* navbar section */
+
+.logo{
+    display: inline-block;
+    position: fixed;
+}
+
+.navigation{
+    height: 11vh;
+    background-color: rgba(41, 52, 98, 1);
+    display: flex;
+    align-items: center;
+    padding-left:35rem;
+    justify-content: space-between;
+    border-radius: .2rem;
+}
+
+.logo a img {
+    height: 2.3rem;
+    /* padding: 0.1rem; */
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.nav-item li a {
+    color: #fff;
+}
+
+.nav-item li a:hover,
+.nav-item li a:active {
+    color: #FFF80A;
+    border-bottom: #FFF80A;
+    border-bottom: 2px solid #FFF80A;
+    padding-bottom: 0.2rem;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FFF80A;
+}
+
+
+
+@media screen and (max-width:780px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navigation{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: rgba(41, 52, 98, 1);
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navigation.active{
+        left:0;
+    }
+}
