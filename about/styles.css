@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Signika&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* navbar section */
+.navbar {
+    width: 100%;
+    background-color: rgba(41, 52, 98, 1);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    border-radius: .2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.logo a img {
+    height: 2.3rem;
+    /* padding: 0.1rem; */
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.nav-item li a {
+    color: #fff;
+}
+
+.nav-item li a:hover,
+.nav-item li a:active {
+    color: #FFF80A;
+    border-bottom: #FFF80A;
+    border-bottom: 2px solid #FFF80A;
+    padding-bottom: 0.2rem;
+}
+
+/* about = bg image */
+
+.about{
+  height: 100vh;
+}
+
+.about img{
+    width:100%;
+}
+
+.navline{
+    margin-bottom: 3rem;
+}
+
+.navline pre{
+    background-color: rgba(41, 52, 98,.9);
+    color: #fff;
+    padding: .2rem 2.5rem;
+}
+
+
+/* recognization image  */
+.recognization{
+    width: 95%;
+    border: 2px groove #293462;
+    margin: auto;
+    box-shadow: 1px 1px 10px #293462;
+    margin-bottom: 7rem;
+    border-radius: .2rem;
+
+}
+
+.recognization img{
+    width: 100%;
+}
+
+/* information of ganpat univeristy  */
+
+
+.information{
+    line-height: 2rem;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5rem;
+    border-radius: .5rem;
+}
+
+.information h2{
+    color: #D61C4E;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    text-decoration: underline;
+}
+
+.information p{
+    margin-top: 2rem;
+    color: rgba(0, 0,0,.7);
+}
+
+
+/* companies image */
+.company{
+    width: 98%;
+    margin: auto;
+    border:2px groove #293462;
+    box-shadow: 1px 1px 10px #293462;
+    margin-bottom: 5rem;
+    border-radius: .2rem;
+}
+
+.company img{
+    width: 100%;
+}
+
+
+
+/* information2 section */
+.information2{
+    line-height: 2rem;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5rem;
+    border-radius: .5rem;
+}
+
+.information2 h2{
+    color: #D61C4E;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.information2 li{
+    color: rgba(0, 0,0,.7);
+    margin: .5rem 2rem;  
+}
+
+/* achievements image section */
+
+.achievements{
+    width: 98%;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.achievements img{
+    width: 100%;
+    box-shadow: 1px 1px 10px #293462;
+}
+
+/* a line before footer */
+.footer-top {
+    width: 100%;
+    height: .5rem;
+    background-color: #FFF80A;
+    box-shadow: 1px 1px 5px #293462;
+}
+
+/* footer section */
+.footer {
+    width: 100%;
+    height: 93vh;
+    background-color: black;
+    display: flex;
+}
+
+.footer .social-section img {
+    width: 15rem;
+    display: block;
+    padding-left: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.footer .social-section a {
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 5rem;
+    margin-left: 6rem;
+}
+
+.footer .social-section a:hover {
+    color: #FFF80A;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.footer .section1 {
+    width: 13rem;
+    height: 20rem;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.footer .section1 h2 {
+    font-size: .8rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.footer .section1 a {
+    color: #fff;
+    line-height: 2rem;
+    font-size: .7rem;
+    display: block;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.footer .section1 a:hover {
+    color: #FFF80A;
+    text-decoration: underline;
+}
+
+.footer .section2 {
+    width: 13rem;
+    height: 20rem;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+.footer .section2 h2 {
+    font-size: .8rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.footer .section2 a {
+    color: #fff;
+    line-height: 2rem;
+    font-size: .7rem;
+    display: block;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.footer .section2 a:hover {
+    color: #FFF80A;
+    text-decoration: underline;
+}
+
+/* email section */
+.footer .section3 {
+    width: 18rem;
+    height: 20rem;
+    margin-top: 6rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.footer .section3 h2 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.footer .section3 input {
+    display: block;
+    background-color: black;
+    color: #fff;
+    border-bottom: 2px groove rgba(255, 255, 255, .5);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    margin-left: 1rem;
+    width: 16rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-transform: none;
+}
+
+.footer .section3 input:focus {
+    padding-bottom: .5rem;
+}
+
+.footer .section3 button {
+    margin: 0 1.5rem;
+    background-color: #D61C4E;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: .2rem;
+}
+
+.footer .section3 button:hover {
+    cursor: pointer;
+    padding: .6rem 1.7rem;
+    box-shadow: .1px .1px 1px #fff;
+}
+
+/* last hr line */
+.copyrightline {
+    background-color: #fff;
+}
+
+/* copyright section */
+.copyright {
+    background-color: black;
+    padding: .5rem 0;
+}
+
+.copyright .copy-right {
+    color: #fff;
+    margin: 1rem 8rem;
+    font-size: .7rem;
+    opacity: .7;
+}
+
+.copyright .terms {
+    color: #fff;
+    margin-left: 10rem;
+    font-size: .7rem;
+    opacity: .7;
+}
